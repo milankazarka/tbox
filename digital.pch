@@ -1,0 +1,8 @@
+#import <Foundation/Foundation.h>
+
+#ifndef _DEBUG
+#define _DEBUG
+#endif
+
+#define NSLog(...) customLogger(__VA_ARGS__);
+void customLogger(NSString *format, ...);

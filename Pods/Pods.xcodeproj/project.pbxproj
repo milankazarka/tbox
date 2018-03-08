@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02677D4875996F97F763234F9EC46284 /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BDC15F2EE44A3E7E7EDAA7B3FA3AC /* MWFeedParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		112A794CCB3F1C01EDB3C92343FD32A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		166C2E7F7B15FE7FD24202664E9088C1 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4578BCB3F89B89DFCE35C3DD63E6F0 /* GTMNSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F7563CA8F2618B0614FFC48CC49B13 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C372ADA65BD5F333B86226E14B60D839 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3DA9BD4B8331FFB817681411662C1008 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = F32C4B4B5058CAD7E00DF32E57A7C22A /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3DACAE51A511C3A0A321F57CE989397C /* MWFeedParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8284E00EA8DAC6F95D7407E4B3AA20F7 /* MWFeedParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DC000C11C7A5C2E6575DF9C693C5A78 /* NSDate+InternetDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 38C60EB63BC05BFAC130711E2BC48B78 /* NSDate+InternetDateTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A3AB04FD16B17940BF39BB1714B337F /* Pods-tboxapp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B9170222B4F08BD7E81B7AA250EAB /* Pods-tboxapp-dummy.m */; };
+		800538D70DAAC3D3E6F43BE88B9F4739 /* MWFeedParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC190917841FC7F1665EBBACF9FDB13 /* MWFeedParser-dummy.m */; };
+		85A13763662CEFE00478E71041672E7C /* MWFeedParser_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3E6B3F298B722FCCBF0E7960CAFD59 /* MWFeedParser_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		959ED30CA8A7D4641C1C1C04ED7CE5BE /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 316005ECE3A774EF6227C7CA88D256BB /* NSDate+InternetDateTime.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9E7FE86DADE135397299EFEABC0CBEC1 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 23DB538D9C4FAF9AE2B318FCABC145A3 /* NSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF5E26B3DB0EB02E888532FE4701E1B7 /* MWFeedInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 922433F922BDD1BF064E7F2B761628BF /* MWFeedInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0AE7E6A42B2107CAB542527E85DD081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D2E2B48CB65D313B0A3C2231DB78A4AF /* MWFeedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A67D9AECD6656EABEAC3155B1FBD7CE4 /* MWFeedItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F21B3682EFB42F6709DBC93539FCBE5B /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 36689698FA0D4F87F34F40BD82206843 /* MWFeedItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FD102245A3EE1407390A700A71669E63 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CEA2F3BCA8C9DE579A1F6D5C7FE2A4 /* MWFeedInfo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53AC7047E704BDE55986ED9F111CC54B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C59BFA556C756BC5DCF7695C0D92B173;
+			remoteInfo = MWFeedParser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08B72C71F56C9162823934A12932B517 /* Pods-tboxapp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tboxapp-frameworks.sh"; sourceTree = "<group>"; };
+		121D03DE5E77162D8CFC600C80506800 /* Pods-tboxapp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tboxapp-resources.sh"; sourceTree = "<group>"; };
+		1F3E6B3F298B722FCCBF0E7960CAFD59 /* MWFeedParser_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedParser_Private.h; path = Classes/MWFeedParser_Private.h; sourceTree = "<group>"; };
+		23DB538D9C4FAF9AE2B318FCABC145A3 /* NSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+HTML.h"; path = "Classes/NSString+HTML.h"; sourceTree = "<group>"; };
+		251EC56A8A8D9F392BA1002B2DDF9F52 /* MWFeedParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MWFeedParser.xcconfig; sourceTree = "<group>"; };
+		316005ECE3A774EF6227C7CA88D256BB /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+InternetDateTime.m"; path = "Classes/NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		344E8AE15F7BCA7E360080897C98D2C9 /* Pods-tboxapp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tboxapp-acknowledgements.plist"; sourceTree = "<group>"; };
+		36689698FA0D4F87F34F40BD82206843 /* MWFeedItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedItem.m; path = Classes/MWFeedItem.m; sourceTree = "<group>"; };
+		38C60EB63BC05BFAC130711E2BC48B78 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+InternetDateTime.h"; path = "Classes/NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		4C67791F7BC4B4F20D7BE77BF5970255 /* MWFeedParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MWFeedParser-prefix.pch"; sourceTree = "<group>"; };
+		50F98E81FEAB8C38A91763947E27E805 /* Pods-tboxapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tboxapp.debug.xcconfig"; sourceTree = "<group>"; };
+		5EC4AE60A46E6E74868AC8196F7088FB /* libPods-tboxapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-tboxapp.a"; path = "libPods-tboxapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8284E00EA8DAC6F95D7407E4B3AA20F7 /* MWFeedParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedParser.h; path = Classes/MWFeedParser.h; sourceTree = "<group>"; };
+		82CEA2F3BCA8C9DE579A1F6D5C7FE2A4 /* MWFeedInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedInfo.m; path = Classes/MWFeedInfo.m; sourceTree = "<group>"; };
+		864DC68DB95F4A4FE226E8536B13F1EE /* Pods-tboxapp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-tboxapp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		922433F922BDD1BF064E7F2B761628BF /* MWFeedInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedInfo.h; path = Classes/MWFeedInfo.h; sourceTree = "<group>"; };
+		938B9170222B4F08BD7E81B7AA250EAB /* Pods-tboxapp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-tboxapp-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C9BDC15F2EE44A3E7E7EDAA7B3FA3AC /* MWFeedParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedParser.m; path = Classes/MWFeedParser.m; sourceTree = "<group>"; };
+		A67D9AECD6656EABEAC3155B1FBD7CE4 /* MWFeedItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedItem.h; path = Classes/MWFeedItem.h; sourceTree = "<group>"; };
+		BD9DBD83A09C2E79AE5C4BB5B7F39FC7 /* Pods-tboxapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tboxapp.release.xcconfig"; sourceTree = "<group>"; };
+		C372ADA65BD5F333B86226E14B60D839 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "Classes/GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D8C0E0D4C98E4E59829AC56FEE8A957B /* libMWFeedParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMWFeedParser.a; path = libMWFeedParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4578BCB3F89B89DFCE35C3DD63E6F0 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "Classes/GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		EFC190917841FC7F1665EBBACF9FDB13 /* MWFeedParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MWFeedParser-dummy.m"; sourceTree = "<group>"; };
+		F32C4B4B5058CAD7E00DF32E57A7C22A /* NSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTML.m"; path = "Classes/NSString+HTML.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		544AF1B52E4859FA0A1702F3EA74B0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112A794CCB3F1C01EDB3C92343FD32A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EC80F831B876722AAF31C9ADBA3055C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AE7E6A42B2107CAB542527E85DD081 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E9546C06DF107947FD26244E52CBB9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C0E0D4C98E4E59829AC56FEE8A957B /* libMWFeedParser.a */,
+				5EC4AE60A46E6E74868AC8196F7088FB /* libPods-tboxapp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F928F511202FE73086E15C3288F4583 /* Pods-tboxapp */ = {
+			isa = PBXGroup;
+			children = (
+				864DC68DB95F4A4FE226E8536B13F1EE /* Pods-tboxapp-acknowledgements.markdown */,
+				344E8AE15F7BCA7E360080897C98D2C9 /* Pods-tboxapp-acknowledgements.plist */,
+				938B9170222B4F08BD7E81B7AA250EAB /* Pods-tboxapp-dummy.m */,
+				08B72C71F56C9162823934A12932B517 /* Pods-tboxapp-frameworks.sh */,
+				121D03DE5E77162D8CFC600C80506800 /* Pods-tboxapp-resources.sh */,
+				50F98E81FEAB8C38A91763947E27E805 /* Pods-tboxapp.debug.xcconfig */,
+				BD9DBD83A09C2E79AE5C4BB5B7F39FC7 /* Pods-tboxapp.release.xcconfig */,
+			);
+			name = "Pods-tboxapp";
+			path = "Target Support Files/Pods-tboxapp";
+			sourceTree = "<group>";
+		};
+		5C2CDFCD42C9C5B021F74E160B4043FE /* MWFeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				D1342108E2C52FF5EEF6F5C13434DC16 /* FeedParser */,
+				746C10316E12F968ED7F0C96CD4E26D2 /* NSDate+InternetDateTime */,
+				756E511901A061F0966A32956DDB2F75 /* NSString+HTML */,
+				A758ACC83355CA2602C63971265687B4 /* Support Files */,
+			);
+			name = MWFeedParser;
+			path = MWFeedParser;
+			sourceTree = "<group>";
+		};
+		746C10316E12F968ED7F0C96CD4E26D2 /* NSDate+InternetDateTime */ = {
+			isa = PBXGroup;
+			children = (
+				38C60EB63BC05BFAC130711E2BC48B78 /* NSDate+InternetDateTime.h */,
+				316005ECE3A774EF6227C7CA88D256BB /* NSDate+InternetDateTime.m */,
+			);
+			name = "NSDate+InternetDateTime";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		756E511901A061F0966A32956DDB2F75 /* NSString+HTML */ = {
+			isa = PBXGroup;
+			children = (
+				EE4578BCB3F89B89DFCE35C3DD63E6F0 /* GTMNSString+HTML.h */,
+				C372ADA65BD5F333B86226E14B60D839 /* GTMNSString+HTML.m */,
+				23DB538D9C4FAF9AE2B318FCABC145A3 /* NSString+HTML.h */,
+				F32C4B4B5058CAD7E00DF32E57A7C22A /* NSString+HTML.m */,
+			);
+			name = "NSString+HTML";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				8A107B4323C80020BEF0E1E6D70B2F3F /* Pods */,
+				3E9546C06DF107947FD26244E52CBB9C /* Products */,
+				A0F9C204040DD12691345CCF61236207 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A107B4323C80020BEF0E1E6D70B2F3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C2CDFCD42C9C5B021F74E160B4043FE /* MWFeedParser */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0F9C204040DD12691345CCF61236207 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F928F511202FE73086E15C3288F4583 /* Pods-tboxapp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A758ACC83355CA2602C63971265687B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				251EC56A8A8D9F392BA1002B2DDF9F52 /* MWFeedParser.xcconfig */,
+				EFC190917841FC7F1665EBBACF9FDB13 /* MWFeedParser-dummy.m */,
+				4C67791F7BC4B4F20D7BE77BF5970255 /* MWFeedParser-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MWFeedParser";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1342108E2C52FF5EEF6F5C13434DC16 /* FeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				922433F922BDD1BF064E7F2B761628BF /* MWFeedInfo.h */,
+				82CEA2F3BCA8C9DE579A1F6D5C7FE2A4 /* MWFeedInfo.m */,
+				A67D9AECD6656EABEAC3155B1FBD7CE4 /* MWFeedItem.h */,
+				36689698FA0D4F87F34F40BD82206843 /* MWFeedItem.m */,
+				8284E00EA8DAC6F95D7407E4B3AA20F7 /* MWFeedParser.h */,
+				9C9BDC15F2EE44A3E7E7EDAA7B3FA3AC /* MWFeedParser.m */,
+				1F3E6B3F298B722FCCBF0E7960CAFD59 /* MWFeedParser_Private.h */,
+			);
+			name = FeedParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2DDE40BC10EC06D9AA820E7850AA1F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166C2E7F7B15FE7FD24202664E9088C1 /* GTMNSString+HTML.h in Headers */,
+				BF5E26B3DB0EB02E888532FE4701E1B7 /* MWFeedInfo.h in Headers */,
+				D2E2B48CB65D313B0A3C2231DB78A4AF /* MWFeedItem.h in Headers */,
+				3DACAE51A511C3A0A321F57CE989397C /* MWFeedParser.h in Headers */,
+				85A13763662CEFE00478E71041672E7C /* MWFeedParser_Private.h in Headers */,
+				3DC000C11C7A5C2E6575DF9C693C5A78 /* NSDate+InternetDateTime.h in Headers */,
+				9E7FE86DADE135397299EFEABC0CBEC1 /* NSString+HTML.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F2D7768E6736DE31C805908852A6DFE /* Pods-tboxapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025E573FFA06EC1928D6166482BE4285 /* Build configuration list for PBXNativeTarget "Pods-tboxapp" */;
+			buildPhases = (
+				F6786B14BCA087A63027F70A04093171 /* Sources */,
+				7EC80F831B876722AAF31C9ADBA3055C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94798094432E750D6C99E02FA0562560 /* PBXTargetDependency */,
+			);
+			name = "Pods-tboxapp";
+			productName = "Pods-tboxapp";
+			productReference = 5EC4AE60A46E6E74868AC8196F7088FB /* libPods-tboxapp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C59BFA556C756BC5DCF7695C0D92B173 /* MWFeedParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57FD57850BE827D228FD78A8F115280 /* Build configuration list for PBXNativeTarget "MWFeedParser" */;
+			buildPhases = (
+				CF068F3BF3262F99F3C25207D70C504F /* Sources */,
+				544AF1B52E4859FA0A1702F3EA74B0E1 /* Frameworks */,
+				C2DDE40BC10EC06D9AA820E7850AA1F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MWFeedParser;
+			productName = MWFeedParser;
+			productReference = D8C0E0D4C98E4E59829AC56FEE8A957B /* libMWFeedParser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3E9546C06DF107947FD26244E52CBB9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C59BFA556C756BC5DCF7695C0D92B173 /* MWFeedParser */,
+				0F2D7768E6736DE31C805908852A6DFE /* Pods-tboxapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF068F3BF3262F99F3C25207D70C504F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F7563CA8F2618B0614FFC48CC49B13 /* GTMNSString+HTML.m in Sources */,
+				FD102245A3EE1407390A700A71669E63 /* MWFeedInfo.m in Sources */,
+				F21B3682EFB42F6709DBC93539FCBE5B /* MWFeedItem.m in Sources */,
+				800538D70DAAC3D3E6F43BE88B9F4739 /* MWFeedParser-dummy.m in Sources */,
+				02677D4875996F97F763234F9EC46284 /* MWFeedParser.m in Sources */,
+				959ED30CA8A7D4641C1C1C04ED7CE5BE /* NSDate+InternetDateTime.m in Sources */,
+				3DA9BD4B8331FFB817681411662C1008 /* NSString+HTML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6786B14BCA087A63027F70A04093171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3AB04FD16B17940BF39BB1714B337F /* Pods-tboxapp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94798094432E750D6C99E02FA0562560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MWFeedParser;
+			target = C59BFA556C756BC5DCF7695C0D92B173 /* MWFeedParser */;
+			targetProxy = 53AC7047E704BDE55986ED9F111CC54B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3020B32FA86D0C334E94AF99BE905304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50F98E81FEAB8C38A91763947E27E805 /* Pods-tboxapp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3EFCC55A4FB20B3F08F26293B13395FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251EC56A8A8D9F392BA1002B2DDF9F52 /* MWFeedParser.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MWFeedParser/MWFeedParser-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		459F89FDD93B2BBB648E97E1FC93743B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD9DBD83A09C2E79AE5C4BB5B7F39FC7 /* Pods-tboxapp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F50528D51A9CA5B38FDD9A348C191177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251EC56A8A8D9F392BA1002B2DDF9F52 /* MWFeedParser.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MWFeedParser/MWFeedParser-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		025E573FFA06EC1928D6166482BE4285 /* Build configuration list for PBXNativeTarget "Pods-tboxapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3020B32FA86D0C334E94AF99BE905304 /* Debug */,
+				459F89FDD93B2BBB648E97E1FC93743B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57FD57850BE827D228FD78A8F115280 /* Build configuration list for PBXNativeTarget "MWFeedParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50528D51A9CA5B38FDD9A348C191177 /* Debug */,
+				3EFCC55A4FB20B3F08F26293B13395FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
