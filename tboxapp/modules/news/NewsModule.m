@@ -37,6 +37,7 @@
 
 - (void)feedParser:(MWFeedParser *)parser didParseFeedItem:(MWFeedItem *)item {
     NSLog(@"    item");
+    item.imageUrl = [parser->currentElementAttributes objectForKey:@"url"]; // #mika - added functionality
     [self.items addObject:item];
 }
 

@@ -46,6 +46,8 @@
 	//     length: how big it is in bytes (NSNumber)
 	//     type: what its type is, a standard MIME type  (NSString)
 	NSArray *enclosures;
+    
+    NSString *imageUrl;
 
 }
 
@@ -58,5 +60,7 @@
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, copy) NSString *author;
 @property (nonatomic, copy) NSArray *enclosures;
+
+@property (strong,nonatomic) NSString *imageUrl; // #mikahack
 
 @end

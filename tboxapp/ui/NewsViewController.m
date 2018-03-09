@@ -26,17 +26,14 @@
         
         self.headerLabel.text = item.title;
         self.detailLabel.text = item.summary;
-        /**
-        [self downloadImageWithURL:[NSURL URLWithString:item.enclosures] completionBlock:^(BOOL succeeded, UIImage *image) {
-            if (succeeded && image) {
-                self.imageView.image = image;
-                NSData *pngData = UIImagePNGRepresentation(image);
-                if (poi.wnid) {
-                    [pngData writeToFile:filePath atomically:YES]; //Write the file
+        
+        if (item.imageUrl) {
+            [self downloadImageWithURL:[NSURL URLWithString:item.imageUrl] completionBlock:^(BOOL succeeded, UIImage *image) {
+                if (succeeded && image) {
+                    self.imageView.image = image;
                 }
-            }
-        }];
-         */
+            }];
+        }
     }
 }
 

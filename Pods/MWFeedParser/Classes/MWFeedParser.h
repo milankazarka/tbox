@@ -67,7 +67,7 @@ typedef enum { FeedTypeUnknown, FeedTypeRSS, FeedTypeRSS1, FeedTypeAtom } FeedTy
 // MWFeedParser
 @interface MWFeedParser : NSObject <NSXMLParserDelegate> {
 
-@private
+@public
 	
 	// Required
 	id <MWFeedParserDelegate> __unsafe_unretained delegate;

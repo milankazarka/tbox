@@ -51,7 +51,9 @@
 
 - (id)initWithCoder:(NSCoder *)decoder {
 	if ((self = [super init])) {
-		identifier = [decoder decodeObjectForKey:@"identifier"];
+        self.imageUrl = nil; // #mikahack custom
+		
+        identifier = [decoder decodeObjectForKey:@"identifier"];
 		title = [decoder decodeObjectForKey:@"title"];
 		link = [decoder decodeObjectForKey:@"link"];
 		date = [decoder decodeObjectForKey:@"date"];
