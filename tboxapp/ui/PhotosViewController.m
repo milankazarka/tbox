@@ -8,6 +8,9 @@
 
 #import "PhotosViewController.h"
 #import "PhotoTile.h"
+#import "State.h"
+#import "Modules.h"
+#import "PhotosModule.h"
 
 @interface PhotosViewController () <UIImagePickerControllerDelegate>
 @property (strong,nonatomic) PhotoTile *selectedCell;
@@ -55,17 +58,22 @@
     static NSString *identifier = @"PhotoTile";
     
     PhotoTile *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    UIImage *image = [(PhotosModule*)[[State shared].modules getModuleClass:[PhotosModule class]] imageAtCellIndex:indexPath.row];
+    if (!image)
+        image = [UIImage imageNamed:@"Plus_button.png"];
+    cell.imageView.image = image;
     
+    /**
     NSString* documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
     
-    NSString* foofile = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"picked%d.png",indexPath.row]];
+    NSString* foofile = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"picked%ld.png",(long)indexPath.row]];
     BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:foofile];
     if (fileExists) {
         cell.imageView.image = [UIImage imageWithContentsOfFile:foofile];
     } else {
         cell.imageView.image = [UIImage imageNamed:@"Plus_button.png"];
     }
-    
+    */
     return cell;
 }
 
@@ -101,11 +109,9 @@
     image = [PhotosViewController imageWithImage:image scaledToSize:CGSizeMake(280.0f, 280.0f)];
     self.selectedCell.imageView.image = image;
     
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:[NSString stringWithFormat:@"picked%d.png",self.selectedIndex]];
+    // data processing & extract in the module - if there's instances where we do data operations here than that's a todo
     
-    // Save image.
-    [UIImagePNGRepresentation(image) writeToFile:filePath atomically:YES];
+    [(PhotosModule*)[[State shared].modules getModuleClass:[PhotosModule class]] storeImage:image atCellIndex:self.selectedIndex];
 }
 
 @end

@@ -43,7 +43,7 @@
 }
 
 -(void)onRegisterWithUsername:(NSString*)username andPassword:(NSString*)password {
-    if (!username || !password) {
+    if (username && password) {
         [[NSUserDefaults standardUserDefaults] setObject:username forKey:@"username"];
         [[NSUserDefaults standardUserDefaults] setObject:password forKey:@"password"];
         [[NSUserDefaults standardUserDefaults] synchronize];

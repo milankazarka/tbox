@@ -6,8 +6,12 @@
 //  Copyright © 2018 Rendering Pixels Limited. All rights reserved.
 //
 
+#import <UIKit/UIKit.h> // we work with UIImage objects
 #import "Module.h"
 
 @interface PhotosModule : Module
+
+-(BOOL)storeImage:(UIImage*)image atCellIndex:(NSUInteger)index;
+-(UIImage*)imageAtCellIndex:(NSUInteger)index;
 
 @end
