@@ -22,6 +22,12 @@
     return self;
 }
 
+-(NSString*)pathForImageFilename:(NSString*)filename {
+    // todo - determines the documents path too often
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    return [[paths objectAtIndex:0] stringByAppendingPathComponent:filename];
+}
+
 -(NSMutableDictionary*)createStorage {
     NSDictionary *dict = [[NSDictionary alloc] init];
     
@@ -37,9 +43,8 @@
         return NO;
     
     NSString *filename = [NSString stringWithFormat:@"picked%lu.png",(unsigned long)index];
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:filename];
-        
+    NSString *filePath = [self pathForImageFilename:filename];
+    
     // Save image.
     if (![UIImagePNGRepresentation(image) writeToFile:filePath atomically:YES]) {
         NSLog(@"couldn't store - show error");
@@ -75,8 +80,7 @@
         NSString *filename = [photosStored objectForKey:[NSNumber numberWithUnsignedInteger:index]];
         if (filename) {
             
-            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-            NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:filename];
+            NSString *filePath = [self pathForImageFilename:filename];
             
             return [UIImage imageWithContentsOfFile:filePath];
         }
