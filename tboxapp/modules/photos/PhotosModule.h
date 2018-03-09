@@ -11,6 +11,8 @@
 
 @interface PhotosModule : Module
 
+@property (strong,nonatomic) NSMutableArray *previewImages;
+
 -(BOOL)storeImage:(UIImage*)image atCellIndex:(NSUInteger)index;
 -(UIImage*)imageAtCellIndex:(NSUInteger)index;
 

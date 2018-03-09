@@ -14,7 +14,7 @@
 -(id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.previews = nil;
+        self.previews = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -23,10 +23,23 @@
     _module = module;
     if (_module) {
         if ([_module isKindOfClass:[PhotosModule class]]) {
-            [self tryLoadingPreviewAtIndex:0 uiv:self.prev1];
-            [self tryLoadingPreviewAtIndex:1 uiv:self.prev2];
-            [self tryLoadingPreviewAtIndex:2 uiv:self.prev3];
-            [self tryLoadingPreviewAtIndex:3 uiv:self.prev4];
+            
+            [self.previews removeAllObjects];
+            // should be a collection
+            [self.previews addObject:self.prev1];
+            [self.previews addObject:self.prev2];
+            [self.previews addObject:self.prev3];
+            [self.previews addObject:self.prev4];
+            
+            PhotosModule *pm = (PhotosModule*)_module;
+            NSMutableArray *previews = [pm previewImages];
+            for(int n = 0; n < previews.count; n++) {
+                if (n>3)
+                    break;
+                UIImageView *iv = [self.previews objectAtIndex:n];
+                iv.image = [previews objectAtIndex:n];
+            }
+            NSLog(@"");
         }
     }
 }

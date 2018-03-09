@@ -63,17 +63,6 @@
         image = [UIImage imageNamed:@"Plus_button.png"];
     cell.imageView.image = image;
     
-    /**
-    NSString* documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
-    
-    NSString* foofile = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"picked%ld.png",(long)indexPath.row]];
-    BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:foofile];
-    if (fileExists) {
-        cell.imageView.image = [UIImage imageWithContentsOfFile:foofile];
-    } else {
-        cell.imageView.image = [UIImage imageNamed:@"Plus_button.png"];
-    }
-    */
     return cell;
 }
 
