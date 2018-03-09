@@ -10,4 +10,6 @@
 
 @interface TasksModule : Module
 
+@property (strong,nonatomic) NSMutableArray *tasks;
+
 @end

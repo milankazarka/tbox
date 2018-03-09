@@ -58,6 +58,11 @@
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="task1" destination="aba-80-tiC" id="r6V-97-fdT"/>
+                <outlet property="task2" destination="oc2-lD-UIJ" id="btu-Uh-9Wp"/>
+                <outlet property="task3" destination="jHh-eS-1HM" id="SmX-Sn-PDe"/>
+            </connections>
             <point key="canvasLocation" x="-80" y="336"/>
         </view>
     </objects>

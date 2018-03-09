@@ -10,4 +10,10 @@
 
 @interface ModuleTileContentDataViewTasks : ModuleTileContentData
 
+// #todo - should be collection or other custom list
+
+@property (weak,nonatomic) IBOutlet UILabel *task1;
+@property (weak,nonatomic) IBOutlet UILabel *task2;
+@property (weak,nonatomic) IBOutlet UILabel *task3;
+
 @end
