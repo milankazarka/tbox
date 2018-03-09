@@ -95,12 +95,11 @@
     NSData *photosStoredData = [[NSUserDefaults standardUserDefaults] objectForKey:@"photos"];
     if (photosStoredData) {
         NSDictionary *photosStored = [NSKeyedUnarchiver unarchiveObjectWithData:photosStoredData];
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         for(NSString *key in photosStored.allKeys) {
             NSString *filename = [photosStored objectForKey:key];
             if (filename) {
                 
-                NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:filename];
+                NSString *filePath = [self pathForImageFilename:filename];
                 
                 UIImage *image = [UIImage imageWithContentsOfFile:filePath];
                 if (image)
