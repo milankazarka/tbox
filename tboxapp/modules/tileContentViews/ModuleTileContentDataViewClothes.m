@@ -28,7 +28,8 @@
             [self.chart setDelegate:self];
             [self.chart setDataSource:self];
             [self.chart reloadData];
-            [self.chart setShowPercentage:YES];	//optional
+            [self.chart setShowPercentage:NO];
+            // returning the text actually doesn't work in this imported library
         }
     }
 }
@@ -75,8 +76,10 @@
 - (NSString *)pieChart:(XYPieChart *)pieChart textForSliceAtIndex:(NSUInteger)index {
     NSUInteger count = 0;
     for(NSString *key in ((ClothesModule*)_module).clothesTypes.allKeys) {
-        if (count==index)
+        if (count==index) {
+            NSLog(@"    textForSliceAtIndex text(%@)",key);
             return key;
+        }
         count++;
     }
     return @"";

@@ -19,6 +19,16 @@
     [super viewDidLoad];
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.usernameField.text = @"";
+    self.passwordField.text = @"";
+}
+
 -(void)onLoginSuccess {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"onLoginSuccess" object:nil];
 }

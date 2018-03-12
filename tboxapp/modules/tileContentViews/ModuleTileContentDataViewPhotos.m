@@ -50,7 +50,7 @@
     
     NSString* documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
     
-    NSString* foofile = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"picked%d.png",index]];
+    NSString* foofile = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"picked%lu.png",(unsigned long)index]];
     BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:foofile];
     if (fileExists) {
         uiv.image = [UIImage imageWithContentsOfFile:foofile];
@@ -59,6 +59,12 @@
 
 -(void)update {
     //
+    CGFloat side = self.innerFrame.frame.size.height/2.0f;
+    CGFloat xstart = (self.innerFrame.frame.size.width/2.0f)-side;
+    self.prev1.frame = CGRectMake(xstart,0.0f,side,side);
+    self.prev2.frame = CGRectMake(xstart+side,0.0f,side,side);
+    self.prev3.frame = CGRectMake(xstart,side,side,side);
+    self.prev4.frame = CGRectMake(xstart+side,side,side,side);
 }
 
 -(void)didMoveToSuperview {

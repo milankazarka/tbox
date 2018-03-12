@@ -16,4 +16,8 @@
 @property (weak,nonatomic) IBOutlet UILabel *task2;
 @property (weak,nonatomic) IBOutlet UILabel *task3;
 
+@property (weak,nonatomic) IBOutlet UIImageView *iv1;
+@property (weak,nonatomic) IBOutlet UIImageView *iv2;
+@property (weak,nonatomic) IBOutlet UIImageView *iv3;
+
 @end

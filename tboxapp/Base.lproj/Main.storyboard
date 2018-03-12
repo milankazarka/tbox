@@ -32,7 +32,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24a-2e-sQf">
                                 <rect key="frame" x="36" y="232" width="303" height="40"/>
@@ -41,7 +41,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uny-g7-ITU">
                                 <rect key="frame" x="109" y="280" width="157" height="41"/>
@@ -117,7 +117,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vky-Hk-vUO">
                                 <rect key="frame" x="43" y="232" width="289" height="40"/>
@@ -126,7 +126,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIV-e7-dIr">
                                 <rect key="frame" x="118" y="280" width="139" height="42"/>
@@ -241,7 +241,13 @@
                             <constraint firstItem="TDa-hR-lRn" firstAttribute="leading" secondItem="4NA-4W-EUP" secondAttribute="leading" id="t9y-gw-62o"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Dashboard" id="2n1-Cw-b7A"/>
+                    <navigationItem key="navigationItem" title="Dashboard" id="2n1-Cw-b7A">
+                        <barButtonItem key="rightBarButtonItem" title="log out" id="U6W-bq-Bgi">
+                            <connections>
+                                <action selector="onLogout:" destination="91x-HE-xP0" id="ZCa-lc-XcL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="gHw-5u-W5v" id="UCF-5L-WAs"/>
                         <segue destination="b3m-qO-gdu" kind="show" identifier="pushNews" id="2s6-9O-BDT"/>
@@ -458,15 +464,40 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="vg2-0A-OBJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs1-KP-HjQ">
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AKb-R9-quM"/>
+                                </constraints>
+                                <state key="normal" title="new task">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNewTask:" destination="7VK-MR-JI0" eventType="touchUpInside" id="oPh-Fd-XTL"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmG-JZ-rk4">
+                                <rect key="frame" x="16" y="110" width="343" height="537"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="je9-Mo-nwc" firstAttribute="top" secondItem="vg2-0A-OBJ" secondAttribute="bottom" id="0BI-sa-zyD"/>
+                            <constraint firstItem="bs1-KP-HjQ" firstAttribute="leading" secondItem="Ui1-CN-PPf" secondAttribute="leadingMargin" id="8cc-sA-2Oi"/>
+                            <constraint firstItem="wmG-JZ-rk4" firstAttribute="top" secondItem="bs1-KP-HjQ" secondAttribute="bottom" constant="8" id="IYI-uS-Wu5"/>
+                            <constraint firstItem="wmG-JZ-rk4" firstAttribute="leading" secondItem="Ui1-CN-PPf" secondAttribute="leadingMargin" id="KfK-mB-571"/>
                             <constraint firstAttribute="trailing" secondItem="vg2-0A-OBJ" secondAttribute="trailing" id="LFU-4U-WM3"/>
                             <constraint firstItem="vg2-0A-OBJ" firstAttribute="leading" secondItem="Ui1-CN-PPf" secondAttribute="leading" id="PYj-cx-eR3"/>
+                            <constraint firstItem="wmG-JZ-rk4" firstAttribute="trailing" secondItem="Ui1-CN-PPf" secondAttribute="trailingMargin" id="UQa-ET-NO4"/>
+                            <constraint firstItem="je9-Mo-nwc" firstAttribute="top" secondItem="wmG-JZ-rk4" secondAttribute="bottom" constant="20" id="aJ5-lf-6Lj"/>
+                            <constraint firstItem="bs1-KP-HjQ" firstAttribute="top" secondItem="BcI-rM-aw1" secondAttribute="bottom" constant="8" id="cgd-WH-nkA"/>
+                            <constraint firstItem="bs1-KP-HjQ" firstAttribute="trailing" secondItem="Ui1-CN-PPf" secondAttribute="trailingMargin" id="kXE-E6-kGc"/>
                             <constraint firstItem="vg2-0A-OBJ" firstAttribute="top" secondItem="Ui1-CN-PPf" secondAttribute="top" id="osc-up-Vaw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="wmG-JZ-rk4" id="0Nb-eL-HBY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SrL-BX-7uY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

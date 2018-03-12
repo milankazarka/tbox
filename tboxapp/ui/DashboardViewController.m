@@ -100,4 +100,9 @@
     }
 }
 
+-(IBAction)onLogout:(id)sender {
+    NSLog(@"onLogout");
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

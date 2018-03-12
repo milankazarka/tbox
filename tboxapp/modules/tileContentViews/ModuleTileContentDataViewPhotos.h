@@ -15,6 +15,7 @@
 @property (strong,nonatomic) NSMutableArray *previews;
 
 // fast approach, otherwise do it smarter
+@property (weak,nonatomic) IBOutlet UIView *innerFrame;
 @property (weak,nonatomic) IBOutlet UIImageView *prev1;
 @property (weak,nonatomic) IBOutlet UIImageView *prev2;
 @property (weak,nonatomic) IBOutlet UIImageView *prev3;

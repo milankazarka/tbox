@@ -11,5 +11,8 @@
 @interface TasksViewController : UIViewController
 
 @property (strong,nonatomic) NSMutableArray *customEditables;
+@property (weak,nonatomic) IBOutlet UIScrollView *scrollView;
+
+-(IBAction)onNewTask:(id)sender;
 
 @end

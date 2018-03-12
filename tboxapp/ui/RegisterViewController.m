@@ -19,6 +19,12 @@
     [super viewDidLoad];
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.username.text = @"";
+    self.password.text = @"";
+}
+
 -(IBAction)onRegister:(id)sender {
     // keychain or some online process in real life scenario
     if (self.username.text.length>0 && self.password.text.length>0) {

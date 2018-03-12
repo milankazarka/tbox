@@ -227,6 +227,8 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
 
 - (void)setShowPercentage:(BOOL)showPercentage
 {
+    // #mikahack
+    
     _showPercentage = showPercentage;
     for(SliceLayer *layer in _pieView.layer.sublayers)
     {
@@ -249,6 +251,7 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
             [textLayer setString:label];
             [textLayer setBounds:CGRectMake(0, 0, size.width, size.height)];
         }
+        //[textLayer setString:@"C"];
     }
 }
 
@@ -386,7 +389,7 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
                 layer.text = [_dataSource pieChart:self textForSliceAtIndex:index];
             }
             
-            [self updateLabelForLayer:layer value:values[index]];
+            [self updateLabelForLayer:layer value:values[index]]; // #mikahack
             [layer createArcAnimationForKey:@"startAngle"
                                   fromValue:[NSNumber numberWithDouble:startFromAngle]
                                     toValue:[NSNumber numberWithDouble:startToAngle+_startPieAngle] 
